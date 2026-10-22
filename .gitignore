@@ -1,3 +1,6 @@
 build
 main.cpp
-build-help.txt
+venv/
+.venv/
+env
+.env
