@@ -5,20 +5,20 @@ from django.db import models
 
 class Adalek(models.Model):
     
-    kod = models.IntegerField(default=0, primary_key=True)
+    kod = models.CharField(max_length=32, primary_key=True)
     nev = models.CharField(max_length=128)
     mellekhatas = models.BooleanField(default=0)
 
     class Meta:
-        verbose_name = "Adalék"
-        verbose_name_plural = "Adalékok"
+        verbose_name = "adalék"
+        verbose_name_plural = "adalékok"
 
     def __str__(self):
-        return self.name
+        return self.nev
 
 class Funkcio(models.Model):
     
-    az = models.IntegerField()
+    az = models.AutoField(primary_key=True)
     kod = models.CharField(max_length=128)
     fnev = models.CharField(max_length=128)
 
@@ -27,5 +27,5 @@ class Funkcio(models.Model):
         verbose_name_plural = "funkciók"
 
     def __str__(self):
-        return self.name
+        return self.kod
 

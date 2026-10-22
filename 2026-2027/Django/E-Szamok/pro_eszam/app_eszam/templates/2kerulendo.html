@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mellékhatások</title>
+</head>
+<body>
+    <p><form action="/"><button type="submit">Vissza a főoldalra</button></form></p>
+    <h1>Adalékanyagok mellékhatásai</h1>
+    <p>
+        <ul>
+            {% for elem in mellekhatasosok %}
+                <li>{{ elem.nev }}</li>
+            {% endfor %}
+        </ul>
+    </p>
+</body>
+</html>

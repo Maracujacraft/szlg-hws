@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adatok importálása</title>
 </head>
-<body>
-    <h1>Kész</h1>
+<body>    
+    <p><form action="/"><button type="submit">Vissza a főoldalra</button></form></p>
 
-    <p>
-        Ennyi új adat jött létre: {{ adaldb }}db adalék, {{ funkdb }}db funkció 
-    </p>
+    <h1>Sikeres Adatfeltöltés!</h1>
 
-
+    <p style="margin-bottom: 0;">Ennyi új adat jött létre:</p>
+    <ul style="margin-top: 0;">
+        <li>{{ adaldb }}db adalék</li>
+        <li>{{ funkdb }}db funkció</li>
+    </ul>
 </body>
 </html>
