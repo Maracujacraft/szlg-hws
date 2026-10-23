@@ -14,6 +14,10 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from app_eszam.views import view_7stat
+from app_eszam.views import view_6kopott
+from app_eszam.views import view_5multi
+from app_eszam.views import view_4szeles
 from app_eszam.views import view_2kerulendo, view_import, view_import_kuld, view_index, view_3karamell
 from encodings import latin_1
 from django.contrib import admin
@@ -26,4 +30,8 @@ urlpatterns = [
     path('', view_index),
     path('2kerulendo/', view_2kerulendo),
     path('3karamell/', view_3karamell),
+    path('4szeles/', view_4szeles),
+    path('5multi/', view_5multi),
+    path('6kopott/', view_6kopott),
+    path('7stat/', view_7stat)
 ]
